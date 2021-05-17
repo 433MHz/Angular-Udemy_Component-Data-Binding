@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SecondComponentComponent implements OnInit {
 
-  @Input() output: String;
+  @Input('data') output: String;
 
   constructor() { }
 

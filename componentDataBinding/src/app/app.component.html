@@ -1,5 +1,5 @@
 <input type="text" placeholder="Send to first component" [(ngModel)] = "secondDataBind">
 <input type="text" placeholder="Send to second component" [(ngModel)] = "dataBind"><br>
 
-<app-first-component [secondDataBind]="secondDataBind"></app-first-component>
-<app-second-component [output]="dataBind"></app-second-component>
+<app-first-component [data]="secondDataBind"></app-first-component>
+<app-second-component [data]="dataBind"></app-second-component>

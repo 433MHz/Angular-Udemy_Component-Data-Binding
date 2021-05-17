@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FirstComponentComponent implements OnInit {
 
-  @Input() secondDataBind: String;
+  @Input('data') secondDataBind: String;
 
   constructor() { }
 
