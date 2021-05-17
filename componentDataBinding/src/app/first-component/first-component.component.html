@@ -1,3 +1,5 @@
 <div class="container">
-    {{secondDataBind}}
+    <input type="text" placeholder="Send data to parent" [(ngModel)] = "dataFromFirst">
+    <button (click) = "sendDataFunction()">Send</button>
+    {{dataFromFirst}}
 </div>

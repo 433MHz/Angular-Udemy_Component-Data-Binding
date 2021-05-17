@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'componentDataBinding';
 
-  dataBind: String;
-  secondDataBind: String;
+  dataFromFirstComponent: string;
+  dataFromSecondComponent: string;
+
+  getDataFromChild(event:{fromFirstComponent: string}){
+    this.dataFromFirstComponent = event.fromFirstComponent;
+  }
 }

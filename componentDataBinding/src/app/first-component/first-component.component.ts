@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -7,11 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FirstComponentComponent implements OnInit {
 
-  @Input('data') secondDataBind: String;
+  @Output() data = new EventEmitter<{fromFirstComponent: string}>();
+  dataFromFirst: string;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  sendDataFunction(){
+    this.data.emit({fromFirstComponent: this.dataFromFirst})
   }
 
 }
