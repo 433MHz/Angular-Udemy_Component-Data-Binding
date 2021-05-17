@@ -1,0 +1,6 @@
+.container{
+    width: 50vw;
+    height: 30vh;
+    border: solid gray 1px;
+    margin: auto;
+}
